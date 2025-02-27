@@ -90,7 +90,8 @@ try{
         }
     });
     if(!conversation){
-        return res.status(200).json([]);
+         res.status(200).json([]);
+         return;
     }
     // messages will be seen here
     res.status(200).json(conversation.messages);

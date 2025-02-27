@@ -4,15 +4,18 @@ const protectRoute = async (req, res, next) => {
     try {
         const token = req.cookies.jwt;
         if (!token) {
-            return res.status(401).json({ error: "You need to be logged in" });
+            res.status(401).json({ error: "You need to be logged in" });
+            return;
         }
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
         if (!decoded) {
-            return res.status(401).json({ error: "Unauthorized - Invalid Token" });
+            res.status(401).json({ error: "Unauthorized - Invalid Token" });
+            return;
         }
         const user = await prisma.user.findUnique({ where: { id: decoded.userId }, select: { id: true, username: true, fullName: true, profilePic: true }, });
         if (!user) {
-            return res.status(401).json({ error: "User not found" });
+            res.status(401).json({ error: "User not found" });
+            return;
         }
         req.user = user;
         next();

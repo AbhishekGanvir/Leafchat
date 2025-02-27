@@ -5,14 +5,17 @@ export const signup = async (req, res) => {
     try {
         const { fullName, username, password, confirmPassword, gender } = req.body;
         if (!fullName || !username || !password || !confirmPassword || !gender) {
-            return res.status(400).json({ error: "Please fill in all fields" });
+            res.status(400).json({ error: "Please fill in all fields" });
+            return;
         }
         if (password !== confirmPassword) {
-            return res.status(400).json({ error: "Passwords don't match" });
+            res.status(400).json({ error: "Passwords don't match" });
+            return;
         }
         const user = await prisma.user.findUnique({ where: { username } });
         if (user) {
-            return res.status(400).json({ error: "Username already exists" });
+            res.status(400).json({ error: "Username already exists" });
+            return;
         }
         const salt = await bcryptjs.genSalt(10);
         const hashedPassword = await bcryptjs.hash(password, salt);
@@ -52,11 +55,13 @@ export const login = async (req, res) => {
         const { username, password } = req.body;
         const user = await prisma.user.findUnique({ where: { username } });
         if (!user) {
-            return res.status(400).json({ error: "Invalid username" });
+            res.status(400).json({ error: "Invalid username" });
+            return;
         }
         const isPasswordCorrect = await bcryptjs.compare(password, user.password);
         if (!isPasswordCorrect) {
-            return res.status(400).json({ error: "Invalid password" });
+            res.status(400).json({ error: "Invalid password" });
+            return;
         }
         generateToken(user.id, res);
         res.status(200).json({
@@ -85,7 +90,8 @@ export const getMe = async (req, res) => {
     try {
         const user = await prisma.user.findUnique({ where: { id: req.user.id } });
         if (!user) {
-            return res.status(404).json({ error: "User not found" });
+            res.status(404).json({ error: "User not found" });
+            return;
         }
         res.status(200).json({
             id: user.id,
