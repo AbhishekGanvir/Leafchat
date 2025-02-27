@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background autumn gradient -->
+  <defs>
+    <linearGradient id="autumnGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffb347" />
+      <stop offset="100%" style="stop-color:#a83232" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="4" y="4" width="56" height="56" rx="12" ry="12" fill="url(#autumnGradient)" />
+  
+  <!-- Even larger, slightly lower positioned chat bubble outline -->
+  <path d="M10 20 C10 16, 14 12, 18 12 L46 12 C50 12, 54 16, 54 20 L54 38 C54 42, 50 46, 46 46 L36 46 L28 54 L28 46 L18 46 C14 46, 10 42, 10 38 Z" 
+        fill="#fff" fillOpacity="0.9" />
+  
+  <!-- Small autumn leaf accent, repositioned -->
+  <path d="M46 18 C48 16, 50 18, 49 20 C51 22, 49 24, 47 22 C45 24, 43 22, 45 20 C44 18, 46 16, 46 18 Z" 
+        fill="#a83232" />
+  
+  <!-- Chat dots - centered, spaced evenly, and moved down slightly -->
+  <circle cx="22" cy="29" r="4" fill="#a83232" />
+  <circle cx="32" cy="29" r="4" fill="#a83232" />
+  <circle cx="42" cy="29" r="4" fill="#a83232" />
+</svg>
