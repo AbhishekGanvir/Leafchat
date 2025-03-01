@@ -7,7 +7,7 @@
 # Leafchat✨ - Where Words Flow
  Tech stack:
 
--   🌟 Postgres + TypeScript + Socket.io + Prisma + TailwindCSS + React + Node + Express + Zustand 
+-   🌟 PostgreSQL + TypeScript + Socket.io + Prisma + TailwindCSS + React + Node + Express + Zustand 
 -   🎃 Authentication && Authorization with JWT
 -   👾 Real-time messaging with Socket.io
 -   🚀 Online user status 
