@@ -1,5 +1,6 @@
 
-![Screenshot 2025-02-24 184858](https://github.com/user-attachments/assets/0bd68653-3661-4dd7-8856-f78c5af46631)
+![Screenshot 2025-02-24 184858](https://github.com/user-attachments/assets/9f527e08-f579-4528-bc3a-032de96c3a20)
+
 
 
 # Leafchat✨ - Where Words Flow
