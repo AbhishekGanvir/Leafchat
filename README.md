@@ -1,8 +1,8 @@
-# Leafchat✨ - Where Words Flow
+w
 ![Screenshot 2025-02-24 184858](https://github.com/user-attachments/assets/0bd68653-3661-4dd7-8856-f78c5af46631)
 
 
-
+# Leafchat✨ - Where Words Flo
  Tech stack:
 
 -   🌟 Postgres + TypeScript + Socket.io + Prisma + TailwindCSS
