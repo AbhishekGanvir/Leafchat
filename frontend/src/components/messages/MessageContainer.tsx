@@ -9,7 +9,7 @@ const MessageContainer = () => {
   const { selectedConversation } = useConversation();
 
 	return (
-		<div className="w-full flex flex-col">
+		<div className="w-full flex flex-col ">
       {!selectedConversation ? (
         <NoChatSelected />
 

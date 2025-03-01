@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background autumn gradient - adjusted to match the image more closely -->
+  <defs>
+    <linearGradient id="autumnGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffb347" />
+      <stop offset="100%" style="stop-color:#e15241" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="4" y="4" width="56" height="56" rx="12" ry="12" fill="url(#autumnGradient)" />
+  
+  <!-- Chat bubble outline - made more rounded like the message bubbles in the image -->
+  <path d="M10 20 C10 16, 14 12, 18 12 L46 12 C50 12, 54 16, 54 20 L54 38 C54 42, 50 46, 46 46 L36 46 L28 54 L28 46 L18 46 C14 46, 10 42, 10 38 Z" 
+        fill="#e15241" fillOpacity="0.9" />
+  
+  <!-- Autumn leaf - styled more like the leaf in the image -->
+  <path d="M42 20 C44 18, 46 20, 45 22 C47 24, 45 26, 43 24 C41 26, 39 24, 41 22 C40 20, 42 18, 42 20 Z" 
+        fill="#ffb347" />
+  
+  <!-- Chat dots - color changed to white like the text in the image -->
+  <circle cx="22" cy="29" r="4" fill="#ffffff" />
+  <circle cx="32" cy="29" r="4" fill="#ffffff" />
+  <circle cx="42" cy="29" r="4" fill="#ffffff" />
+</svg>

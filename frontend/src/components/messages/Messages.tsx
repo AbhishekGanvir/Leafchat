@@ -19,7 +19,7 @@ const Messages = () => {
 	}, [messages]);
 
 	return (
-		<div className='px-2 sm:px-4 flex-1 min-w-[200px] w-full max-w-screen-md overflow-y-auto overflow-x-hidden max-h-[490px]'>
+		<div className='px-2 sm:px-4 flex-1 min-w-[200px] w-full max-w-screen-md overflow-y-auto  overflow-x-hidden max-h-[890px]'>
 			{loading && [...Array(3)].map((_, idx) => <MessageSkeleton key={idx} />)}
 			
 			{messages.map((message) => (
