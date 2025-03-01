@@ -1,5 +1,7 @@
 # Leafchat✨ - Where Words Flow
-![Recording 2025-02-24 184737 (1)](https://github.com/user-attachments/assets/277e4cc8-902b-41ef-80e8-822495933be6)
+![Screenshot 2025-02-24 184858](https://github.com/user-attachments/assets/0bd68653-3661-4dd7-8856-f78c5af46631)
+
+
 
  Tech stack:
 
