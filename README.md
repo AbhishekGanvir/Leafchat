@@ -18,10 +18,10 @@
 ### Setup .env file
 
 ```js
-DATABASE_URL=...
-JWT_SECRET=...
-NODE_ENV=...
-PORT=...
+DATABASE_URL=your_postgres_url..
+JWT_SECRET=your_secret..
+NODE_ENV=devlopment..
+PORT=3000..
 ```
 
 
