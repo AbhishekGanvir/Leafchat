@@ -1,5 +1,5 @@
 # Leafchat✨ - Where Words Flow
-![Recording 2025-02-24 184737 (2)](https://github.com/user-attachments/assets/e3d1cbaa-8c37-4e3c-a1e1-848ed5d6ccd5)
+![Recording 2025-02-24 184737 (1)](https://github.com/user-attachments/assets/277e4cc8-902b-41ef-80e8-822495933be6)
 
  Tech stack:
 
@@ -37,3 +37,9 @@ npm run build
 ```shell
 npm run start
 ```
+#
+
+
+
+
+
