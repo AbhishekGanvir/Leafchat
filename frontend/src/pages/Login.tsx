@@ -42,7 +42,7 @@ const Login = () => {
 			<form className='flex flex-col gap-6' onSubmit={handleSubmitForm}>
 			  <div>
 				
-				<input type='username' placeholder='username' 
+				<input type='username' placeholder='Username' 
 				value={inputs.username}
 				onChange={(e) => setInputs({...inputs, username: e.target.value})}
 
